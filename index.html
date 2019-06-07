@@ -313,7 +313,7 @@ project</em> and allow Android studio to fetch you what is missing.</li>
 </ul>
 </li>
 <li>Download this
-<a class="reference external" href="https://github.com/opencv/opencv/releases/download/2.4.13.3/opencv-2.4.13.3-android-sdk.zip">OpenCV-android-sdk</a>
+<a class="reference external" href="https://github.com/opencv/opencv/releases/download/4.0.1/opencv-4.0.1-android-sdk.zip">OpenCV-android-sdk</a>
 zip file and extract it.<ul>
 <li>Copy all the files from <em>&#8220;OpenCV-android-sdk/sdk/native/3rdparty&#8221;</em>
 to <em>&#8220;phimpme-android/app/src/main/3rdparty&#8221;</em> (create directory if
@@ -321,6 +321,10 @@ it doesn&#8217;t exist)</li>
 <li>Copy all the files from <em>&#8220;OpenCV-android-sdk/sdk/native/libs&#8221;</em> to
 <em>&#8220;phimpme-android/app/src/main/jniLibs&#8221;</em> (create directory if it
 doesn&#8217;t exist)</li>
+<li>Copy all the files from
+<em>&#8220;OpenCV-android-sdk/sdk/native/jni/include&#8221;</em> to
+<em>&#8220;phimpme-android/app/src/main/jni/include&#8221;</em> (create directory if
+it doesn&#8217;t exist)</li>
 <li>Now build your project. If your build fails then try deleting
 these build directories
 <em>&#8220;phimpme-android/app/.externalNativeBuild&#8221;</em> and
@@ -328,7 +332,7 @@ these build directories
 again.</li>
 </ul>
 </li>
-<li>If build error still persist, try replacing ndk with ndk version 16b
+<li>If build error still persist, try replacing ndk with ndk version 18b
 from
 <a class="reference external" href="https://developer.android.com/ndk/downloads/older_releases">ndk-archives</a>
 . Once all build errors have been resolved, you should be all set to
